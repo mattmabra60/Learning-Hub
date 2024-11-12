@@ -1,0 +1,128 @@
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.Icon {
+    max-width: 75px;
+    border-radius: 75px;
+}
+
+/* Header Styling */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo h1 {
+    font-size: 1.5rem;
+    padding-right: 800px;
+}
+
+.header .search-bar input {
+    padding: 8px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+.header .user-nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Main Content Layout */
+.main-content {
+    display: flex;
+    margin-top: 20px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    padding: 15px;
+    background-color: #fff;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.sidebar-item h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.sidebar-item ul {
+    list-style-type: none;
+}
+
+.sidebar-item ul li {
+    margin-bottom: 8px;
+}
+
+.sidebar-item ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Main Feed Section */
+.main-feed {
+    flex: 1;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.main-feed h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.post {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.post h3 {
+    font-size: 1.3rem;
+}
+
+.post a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+.post p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.post-meta {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

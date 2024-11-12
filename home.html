@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forum Wireframe</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <!-- Header Section -->
+    <header class="header">
+        <img src= "images/Icon.jpg" class="Icon"/>
+        <div class="logo">
+            <h1>Learning Hub</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="user-nav">
+            <a href="#">Login</a> | <a href="#">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Sidebar Section -->
+        <aside class="sidebar">
+            <div class="sidebar-item">
+                <h2>Popular Topics</h2>
+                <ul>
+                    <li><a href="#">Topic 1</a></li>
+                    <li><a href="#">Topic 2</a></li>
+                    <li><a href="#">Topic 3</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-item">
+                <h2>Recent Posts</h2>
+                <ul>
+                    <li><a href="#">Post 1</a></li>
+                    <li><a href="#">Post 2</a></li>
+                    <li><a href="#">Post 3</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Feed Section -->
+        <section class="main-feed">
+            <h2>Latest Posts</h2>
+            <div class="post">
+                <h3><a href="#">Post Title 1</a></h3>
+                <p>Post description goes here...</p>
+                <div class="post-meta">
+                    <span>Posted by: User1</span> | <span>2 hours ago</span>
+                </div>
+            </div>
+            <div class="post">
+                <h3><a href="#">Post Title 2</a></h3>
+                <p>Post description goes here...</p>
+                <div class="post-meta">
+                    <span>Posted by: User2</span> | <span>4 hours ago</span>
+                </div>
+            </div>
+            <!-- Add more posts as needed -->
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Learning Hub. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
