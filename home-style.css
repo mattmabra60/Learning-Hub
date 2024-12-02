@@ -241,3 +241,46 @@ body {
     width: 100%;
     bottom: 0;
 }
+
+/* Footer Paragraph Styling */
+.footer p {
+    margin: 10px 0; /* Add some space above and below the paragraph */
+    font-size: 16px; /* Make the text a bit larger for readability */
+}
+
+/* Social Media Icons Container */
+.footer .social {
+    margin-top: 15px; /* Add some space above the icons */
+}
+
+/* Social Media Icon Styling */
+.footer .social a {
+    margin: 0 10px; /* Space out the icons */
+    display: inline-block; /* Display them horizontally */
+}
+
+/* Social Media Icon Image Styling */
+.footer .social a img {
+    width: 30px; /* Adjust icon size */
+    height: 30px; /* Ensure icons are square */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+    border-radius: 25%;
+}
+
+/* Hover Effect for Icons */
+.footer .social a:hover img {
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
+/* Responsive Design: Ensure footer looks good on mobile */
+@media (max-width: 600px) {
+    .footer {
+        font-size: 12px; /* Smaller text size on mobile */
+        padding: 15px; /* Less padding on mobile */
+    }
+
+    .footer .social a img {
+        width: 25px; /* Slightly smaller icons */
+        height: 25px; /* Keep square shape */
+    }
+}
