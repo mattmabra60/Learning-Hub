@@ -15,7 +15,6 @@ body {
     border-radius: 75px;
 }
 
-/* Keeping your existing header styles */
 .header {
     background-color: #333;
     color: white;
@@ -49,13 +48,12 @@ body {
     grid-template-columns: 250px 1fr;
     gap: 20px;
     padding: 20px;
-    margin-bottom: 60px; /* Account for fixed footer */
+    margin-bottom: 100px; 
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Enhanced Sidebar Styling */
 .sidebar {
     background-color: #fff;
     border-radius: 8px;
@@ -107,7 +105,6 @@ body {
     color: #666;
 }
 
-/* Enhanced Main Feed Section */
 .main-feed {
     background-color: #fff;
     border-radius: 8px;
@@ -231,55 +228,39 @@ body {
     color: white;
 }
 
-/* Footer - keeping your existing styles */
-.footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding-top: 100px;
-    width: 100%;
-    bottom: 0;
-}
-
-/* Footer Paragraph Styling */
 .footer p {
-    margin: 10px 0; /* Add some space above and below the paragraph */
-    font-size: 16px; /* Make the text a bit larger for readability */
+    margin: 10px 0; 
+    font-size: 16px; 
 }
 
-/* Social Media Icons Container */
 .footer .social {
-    margin-top: 15px; /* Add some space above the icons */
+    margin-top: 15px; 
 }
 
-/* Social Media Icon Styling */
 .footer .social a {
-    margin: 0 10px; /* Space out the icons */
-    display: inline-block; /* Display them horizontally */
+    margin: 0 10px;
+    display: inline-block;
 }
 
-/* Social Media Icon Image Styling */
 .footer .social a img {
-    width: 30px; /* Adjust icon size */
-    height: 30px; /* Ensure icons are square */
-    transition: transform 0.3s ease; /* Smooth scaling effect */
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease; 
     border-radius: 25%;
 }
 
-/* Hover Effect for Icons */
 .footer .social a:hover img {
-    transform: scale(1.1); /* Slightly enlarge icons on hover */
+    transform: scale(1.1);
 }
 
-/* Responsive Design: Ensure footer looks good on mobile */
 @media (max-width: 600px) {
     .footer {
-        font-size: 12px; /* Smaller text size on mobile */
-        padding: 15px; /* Less padding on mobile */
+        font-size: 12px;
+        padding: 15px; 
     }
 
     .footer .social a img {
-        width: 25px; /* Slightly smaller icons */
-        height: 25px; /* Keep square shape */
+        width: 25px; 
+        height: 25px; 
     }
 }

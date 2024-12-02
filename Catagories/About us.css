@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Icon {
+    max-width: 75px;
+    border-radius: 75px;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo h1 {
+    font-size: 1.5rem;
+    padding-right: 800px;
+}
+
+.header .search-bar input {
+    padding: 8px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+.header .user-nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.main-content {
+    padding-bottom: 100px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.header-primary {
+    color: #1a5f7a;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    border-bottom: 3px solid #1a5f7a;
+    padding-bottom: 0.5rem;
+}
+
+.section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem;
+}
+
+.section-text {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.section-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .section-content {
+        grid-template-columns: 1fr;
+    }
+
+    .header-primary {
+        font-size: 1.8rem;
+    }
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.course-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+.course-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.footer .social {
+    margin-top: 15px; 
+}
+
+.footer .social a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer .social a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+    border-radius: 25%;
+}
+
+.footer .social a:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .footer {
+        font-size: 12px;
+        padding: 15px;
+    }
+
+    .footer .social a img {
+        width: 25px;
+        height: 25px;
+    }
+}
