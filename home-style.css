@@ -236,8 +236,7 @@ body {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
-    position: fixed;
+    padding-top: 100px;
     width: 100%;
     bottom: 0;
 }
