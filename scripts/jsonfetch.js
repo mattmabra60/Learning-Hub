@@ -9,4 +9,4 @@ async function SendRequest()
     console.log(response);
 }
 
-await SendRequest();
+SendRequest();
