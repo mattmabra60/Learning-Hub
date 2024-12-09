@@ -10,7 +10,7 @@ async function GetData()
 
     const response = await fetch("https://jsonvercelserver.vercel.app/posts", options);
 
-    console.log(response.text);
+    console.log(response.GetData());
 }
 
-GetData();
+await GetData();
