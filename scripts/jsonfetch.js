@@ -1,6 +1,6 @@
 async function SendRequest()
 {
-    const response = await fetch("https://jsonvercelserver.vercel.app/api/posts", "GET");
+    const response = await fetch("https://jsonvercelserver.vercel.app/posts", "GET");
 
     console.log(response);
 }
