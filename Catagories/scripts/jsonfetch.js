@@ -2,7 +2,11 @@ async function GetData()
 {
     const response = await fetch("https://jsonvercelserver.vercel.app/posts");
 
-    console.log(response);
+    let responseData = [];
+
+    responseData = await response.json();
+
+    console.log(responseData);
 }
 
 GetData();
