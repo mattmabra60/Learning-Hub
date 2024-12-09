@@ -1,3 +1,8 @@
-const response = await fetch("https://jsonvercelserver.vercel.app/posts");
+async function GetData()
+{
+    const response = await fetch("https://jsonvercelserver.vercel.app/posts");
 
-console.log(response);
+    console.log(response);
+}
+
+GetData();
