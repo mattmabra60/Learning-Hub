@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Learning Hub</title>
     <link rel="stylesheet" href="About us.css">
+    <style>
+        /* Style for container with images and overlay text */
+        .course-card {
+            position: relative;
+            width: 100%;
+        }
+
+        /* Image styling */
+        .course-image {
+            width: 100%; /* Make the image responsive */
+            height: auto;
+        }
+
+        /* Text overlay styling */
+        .text-overlay {
+            position: absolute;
+            top: 50%; /* Position the text vertically in the center */
+            left: 50%; /* Position the text horizontally in the center */
+            transform: translate(-50%, -50%); /* Center the text exactly */
+            color: white; /* Text color */
+            font-size: 24px; /* Text size */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: add shadow for better visibility */
+            text-decoration: none; /* Remove underline from links */
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -27,7 +52,7 @@
                 <h1 class="header-primary">Welcome to the BYUI Learning Hub:</h1>
                 <div class="section-content">
                     <p class="section-text">
-                        Knowledge transforms lives. At the BYUI Learning hub, We introduce you to whole new 
+                        Knowledge transforms lives. At the BYUI Learning hub, We introduce you to a whole new 
                         world of discovery, where learning is fun, engaging, accessible, and tailored just for you. 
                         With a wide range of tutorials and interactive courses to choose from, we provide you 
                         the tools you need to succeed. Start your journey towards earning that knowledge 
@@ -58,31 +83,37 @@
                     <div class="course-card">
                         <a href="Agriculture And Life Sciences.html">
                             <img src="../images/course-1.png" alt="Course Catalog 1" class="course-image">
+                            <div class="text-overlay">Agriculture and Life Sciences</div>
                         </a>
                     </div>
                     <div class="course-card">
                         <a href="Business and Communication.html">
                             <img src="../images/course-2.png" alt="Course Catalog 2" class="course-image">
+                            <div class="text-overlay">Business and Communication</div>
                         </a>
                     </div>
                     <div class="course-card">
                         <a href="Education and Human Development.html">
                             <img src="../images/course-3.png" alt="Course Catalog 3" class="course-image">
+                            <div class="text-overlay">Education and Human Development</div>
                         </a>
                     </div>
                     <div class="course-card">
                         <a href="Language and Letters.html">
                             <img src="../images/course-4.jpg" alt="Course Catalog 4" class="course-image">
+                            <div class="text-overlay">Language and Letters</div>
                         </a>
                     </div>
                     <div class="course-card">
                         <a href="Performing and Visual Arts.html">
                             <img src="../images/course-5.jpg" alt="Course Catalog 5" class="course-image">
+                            <div class="text-overlay">Performing and Visual Arts</div>
                         </a>
                     </div>
                     <div class="course-card">
                         <a href="Physical Sciences and Engineering.html">
                             <img src="../images/course-6.jpg" alt="Course Catalog 6" class="course-image">
+                            <div class="text-overlay">Physical Sciences and Engineering</div>
                         </a>
                     </div>
                 </div>
