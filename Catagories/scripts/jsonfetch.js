@@ -25,8 +25,7 @@ async function GetData()
 
             const postCategory = document.createElement('span');
             postCategory.setAttribute('class', 'post-category');
-            console.log(responseData[i].topic)
-            postCategory.text = responseData[i].topic;
+            postCategory.textContent = responseData[i].topic;
             postHeader.appendChild(postCategory);
         }
     }
