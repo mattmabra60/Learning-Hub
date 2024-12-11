@@ -6,14 +6,27 @@ async function GetData()
 
     for (var i = 0; i < responseData.length; i++)
     {
-        console.log(responseData[i].category);
         if (responseData[i].category == "Agriculture and Life Sciences")
         {
-            console.log("hit1");
             const javaposts = document.getElementById('javaposts');
             const postDiv = document.createElement('div');
             postDiv.setAttribute('class', 'post');
             javaposts.appendChild(postDiv);
+            
+            const postHeader = document.createElement('div');
+            postHeader.setAttribute('class', 'post-header');
+            postDiv.appendChild(postHeader);
+
+            const postTitle = document.createElement('a');
+            postTitle.setAttribute('href', '#');
+            postTitle.setAttribute('class', 'post-title');
+            postTitle.text(responseData[i].title);
+            postHeader.appendChild(postTitle);
+
+            const postCategory = document.createElement('span');
+            postCategory.setAttribute('class', 'post-category');
+            postCategory.text(responseData[i].topic);
+            postHeader.appendChild(postCategory);
         }
     }
 }
