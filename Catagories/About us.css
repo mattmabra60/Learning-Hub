@@ -130,20 +130,25 @@ body {
 .footer {
     background-color: #333;
     color: white;
-    text-align: center;
     padding: 10px;
     position: fixed;
     width: 100%;
     bottom: 0;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center elements horizontally */
+    align-items: center; /* Vertically center the content */
+    flex-direction: row; /* Make sure it's a horizontal row */
 }
 
 .footer p {
-    margin: 10px 0;
+    margin: 10px 20px;  /* Adjusted to space out the text */
     font-size: 16px;
 }
 
 .footer .social {
-    margin-top: 15px; 
+    margin-top: 15px;
+    display: flex; /* Use flexbox for the social icons */
+    justify-content: center; /* Ensure icons are centered */
 }
 
 .footer .social a {
@@ -160,6 +165,24 @@ body {
 
 .footer .social a:hover img {
     transform: scale(1.1);
+}
+
+/* Pages section if you have links or other elements */
+.pages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+.pages a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 10px;
+}
+
+.pages a:hover {
+    text-decoration: none; 
+    color: inherit; 
 }
 
 @media (max-width: 600px) {
