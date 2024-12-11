@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Icon {
+    max-width: 75px;
+    border-radius: 75px;
+}
+
+.header {
+    background-color: #1a5f7a;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo h1 {
+    font-size: 1.5rem;
+    padding-right: 800px;
+}
+
+.header .search-bar input {
+    padding: 8px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+.header .user-nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+    padding-bottom: 100px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;     
+    justify-content: center;   
+    align-items: center;     
+    text-align: center;          
+    background-color: #1a5f7a;    
+    color: white;               
+    padding-bottom: 2em;             
+}
+
+.top h1 {
+    font-size: 2.5rem;           
+    margin-bottom: 10px;      
+}
+
+.top p {
+    font-size: 1.2rem;            
+    margin-top: 0;     
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 2rem;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    padding: 12px 20px;
+    background-color: #1a5f7a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #155d7a;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer p {
+    margin: 10px 0; 
+    font-size: 16px; 
+}
+
+.footer .social {
+    margin-top: 15px; 
+}
+
+.footer .social a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer .social a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease; 
+    border-radius: 25%;
+}
+
+.footer .social a:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .footer {
+        font-size: 12px;
+        padding: 15px; 
+    }
+
+    .footer .social a img {
+        width: 25px; 
+        height: 25px; 
+    }
+}
