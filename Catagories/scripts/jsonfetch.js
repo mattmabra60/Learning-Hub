@@ -6,6 +6,7 @@ async function GetData()
 
     for (var i = 0; i < responseData.length; i++)
     {
+        console.log(responseData[i].category);
         if (responseData[i].category == "Agriculture and Life Sciences")
         {
             console.log("hit1");
