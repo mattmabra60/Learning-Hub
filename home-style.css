@@ -238,13 +238,28 @@ body {
     bottom: 0;
 }
 
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center elements horizontally */
+    align-items: center; /* Vertically center the content */
+    flex-direction: row; /* Make sure it's a horizontal row */
+}
+
 .footer p {
-    margin: 10px 0; 
-    font-size: 16px; 
+    margin: 10px 20px;  /* Adjusted to space out the text */
+    font-size: 16px;
 }
 
 .footer .social {
-    margin-top: 15px; 
+    margin-top: 15px;
+    display: flex; /* Use flexbox for the social icons */
+    justify-content: center; /* Ensure icons are centered */
 }
 
 .footer .social a {
@@ -255,7 +270,7 @@ body {
 .footer .social a img {
     width: 30px;
     height: 30px;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
     border-radius: 25%;
 }
 
@@ -263,14 +278,32 @@ body {
     transform: scale(1.1);
 }
 
+/* Pages section if you have links or other elements */
+.pages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+.pages a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 10px;
+}
+
+.pages a:hover {
+    text-decoration: none; 
+    color: inherit; 
+}
+
 @media (max-width: 600px) {
     .footer {
         font-size: 12px;
-        padding: 15px; 
+        padding: 15px;
     }
 
     .footer .social a img {
-        width: 25px; 
-        height: 25px; 
+        width: 25px;
+        height: 25px;
     }
 }
