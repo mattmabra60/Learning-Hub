@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.Icon {
+    max-width: 75px;
+    border-radius: 75px;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo h1 {
+    font-size: 1.5rem;
+    padding-right: 800px;
+}
+
+.header .search-bar input {
+    padding: 8px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+.header .user-nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Adjust to your preference */
+}
+
+.login-form {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.login-form .forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-form .forgot-password a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.login-form .forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center elements horizontally */
+    align-items: center; /* Vertically center the content */
+    flex-direction: row; /* Make sure it's a horizontal row */
+}
+
+.footer p {
+    margin: 10px 20px;  /* Adjusted to space out the text */
+    font-size: 16px;
+}
+
+.footer .social {
+    margin-top: 15px;
+    display: flex; /* Use flexbox for the social icons */
+    justify-content: center; /* Ensure icons are centered */
+}
+
+.footer .social a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer .social a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+    border-radius: 25%;
+}
+
+.footer .social a:hover img {
+    transform: scale(1.1);
+}
+
+/* Pages section if you have links or other elements */
+.pages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+.pages a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 10px;
+}
+
+.pages a:hover {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+@media (max-width: 600px) {
+    .footer {
+        font-size: 12px;
+        padding: 15px;
+    }
+
+    .footer .social a img {
+        width: 25px;
+        height: 25px;
+    }
+}
