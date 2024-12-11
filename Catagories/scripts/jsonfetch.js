@@ -6,7 +6,13 @@ async function GetData()
 
     foreach (post in responseData)
     {
-        console.log(posts);
+        if (post.category == "Agriculture and Life Sciences")
+        {
+            const javaposts = document.querySelector('#javaposts');
+            const postDiv = document.createElement('div');
+            postDiv.setAttribute('class', 'post');
+            javaposts.appendChild(postDiv);
+        }
     }
 }
 
