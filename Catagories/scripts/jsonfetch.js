@@ -4,16 +4,15 @@ async function GetData()
 
     const responseData = await response.json();
 
-    foreach (post in responseData)
-    {
+    responseData.forEach(post => {
         if (post.category == "Agriculture and Life Sciences")
-        {
-            const javaposts = document.querySelector('#javaposts');
-            const postDiv = document.createElement('div');
-            postDiv.setAttribute('class', 'post');
-            javaposts.appendChild(postDiv);
-        }
-    }
+            {
+                const javaposts = document.querySelector('#javaposts');
+                const postDiv = document.createElement('div');
+                postDiv.setAttribute('class', 'post');
+                javaposts.appendChild(postDiv);
+            }
+    });
 }
 
 await GetData();
