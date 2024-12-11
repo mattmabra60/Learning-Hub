@@ -4,7 +4,10 @@ async function GetData()
 
     const responseData = await response.json();
 
-    console.log(responseData);
+    foreach (post in responseData)
+    {
+        console.log(posts);
+    }
 }
 
 await GetData();
