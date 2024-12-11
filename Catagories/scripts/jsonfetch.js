@@ -20,12 +20,12 @@ async function GetData()
             const postTitle = document.createElement('a');
             postTitle.setAttribute('href', '#');
             postTitle.setAttribute('class', 'post-title');
-            postTitle.text(responseData[i].title);
+            postTitle.text = responseData[i].title;
             postHeader.appendChild(postTitle);
 
             const postCategory = document.createElement('span');
             postCategory.setAttribute('class', 'post-category');
-            postCategory.text(responseData[i].topic);
+            postCategory.text = responseData[i].topic;
             postHeader.appendChild(postCategory);
         }
     }
